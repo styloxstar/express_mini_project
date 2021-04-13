@@ -1,0 +1,13 @@
+create null file:- type nul > filename
+npm init
+install express:- npm install express
+import express and other utilities using require :- require('express')
+
+create server:- 
+    ->const app=call express()
+    ->create port:- const port = portnumber
+    ->now to call server use listen:- app.listen(port)
+    -> we can set request and response inside app.get() and app.listen() as callback function
+    -> whenver we are making any changes, makes sure to restart the server 
+    -> to avoid, restarting server, install nodemon package:- npm install -g nodemon
+    -> now instead of running file using 'node filename', now use 'nodemon filename'
