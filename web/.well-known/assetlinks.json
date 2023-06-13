@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "mypolicy",
+      "package_name": "com.odysseynext.mypolicy.mypolicy",
+      "sha256_cert_fingerprints": [
+        "25:11:0D:FC:7B:C2:79:19:A2:D5:F4:CA:9F:12:4F:61:65:60:C0:C6:35:A6:E8:40:7C:4C:8C:AD:09:DD:81:B3"
+      ]
+    }
+  }
+]

@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParse = require('body-parser');
 const { request } = require('express');
 
-// cal express class and function, using below
+// call express class and function, using below
 const app = express()
 //create port
 const port = 5000
@@ -51,10 +51,8 @@ app.post('/calculator',(req,res)=>{
 
     // now we can fetch the values
     let num1 = +req.body.n1;
-    let num2= +req.body.n2;
+    let num2= +req.body.n2;    
     res.send(`<h2 style='text-align:center'>the sume of given numbers are: ${num1 + num2}</h2>`)
-
-
 })
 
 
@@ -76,13 +74,10 @@ app.post('/bmi', (req, res) => {
     }else{
         result = "warning! your bmi index shows you are overweight, time to exercise";
     }
-
     res.send(`<h3 style='text-align:center'>Your BMI is: ${bmi} and ${result}</h3>`)
 })
-
 
 // to create server listen(port) is used, and we can use the callback() to display message
 app.listen(port, (request,response)=>{
     console.log(`server is running at port no. ${port} `);
-
 });
